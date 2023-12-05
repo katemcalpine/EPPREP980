@@ -1,5 +1,5 @@
 #--------------------------------------------------------------------
-# Title: InBuiltFunctions.py
+# Title: ConsoleIOVariables.py
 # Author: Kate McAlpine
 # Email: kate.mcalpine@newcastle.edu.au
 # Created: 15th November, 2023

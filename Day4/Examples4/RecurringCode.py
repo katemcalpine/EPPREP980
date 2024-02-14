@@ -1,13 +1,21 @@
 #--------------------------------------------------------------------
-# Title: Creating2DArray.py
+# Title: RecurringCode.py
 # Author: Kate McAlpine
 # Email: kate.mcalpine@newcastle.edu.au
 # Created: 30th November, 2023
 # Found in: Day 4 Lecture Slides
 #--------------------------------------------------------------------
 
-import numpy as np
-
-a = np.array([[12, 37, 24], [12, 42, 5], [36, 7, 13]])
-
-print(a)
+pi = 3.14
+r = 5
+area = pi * r**2
+print(area)
+r = 13
+area = pi * r**2
+print(area)
+r = 27
+circumference = 2 * pi * r
+print(circumference)
+r = 16
+circumference = 2 * pi * r
+print(circumference)

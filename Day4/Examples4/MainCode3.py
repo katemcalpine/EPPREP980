@@ -1,13 +1,14 @@
 #--------------------------------------------------------------------
-# Title: Creating2DArray.py
+# Title: MainCode3.py
 # Author: Kate McAlpine
 # Email: kate.mcalpine@newcastle.edu.au
 # Created: 30th November, 2023
 # Found in: Day 4 Lecture Slides
 #--------------------------------------------------------------------
 
-import numpy as np
+from Circle2 import area, circumference
 
-a = np.array([[12, 37, 24], [12, 42, 5], [36, 7, 13]])
-
-print(a)
+area(5)
+area(13)
+circumference(27)
+circumference(16)

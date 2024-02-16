@@ -10,7 +10,7 @@ import matplotlib.image as img
 import matplotlib.pyplot as plt
 import numpy as np
 
-a = img.imread('ColourImage.png')
+a = img.imread('ColourImage.jpg')
 
 print(np.shape(a))
 

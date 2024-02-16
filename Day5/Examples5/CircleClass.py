@@ -1,5 +1,5 @@
 #--------------------------------------------------------------------
-# Title: Creating3DArray.py
+# Title: CircleClass.py
 # Author: Kate McAlpine
 # Email: kate.mcalpine@newcastle.edu.au
 # Created: 5th December, 2023
@@ -8,8 +8,13 @@
 
 import numpy as np
 
-a = np.array([[[12, 37, 24], [12, 42, 5], [36, 7, 13]],
-              [[61, 8, 56], [4, 54, 76], [34, 9, 23]],
-              [[47, 9, 93], [2, 23, 54], [63, 42, 32]]])
+r = 0
 
-print(a)
+class Circle:
+    def area(self):
+        a = np.pi * self.r**2
+        print(a)
+
+    def circumference(self):
+        c = 2 * np.pi * self.r
+        print(c)

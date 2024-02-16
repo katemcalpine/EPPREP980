@@ -1,5 +1,5 @@
 #--------------------------------------------------------------------
-# Title: Creating3DArray.py
+# Title: UsingRandint3D.py
 # Author: Kate McAlpine
 # Email: kate.mcalpine@newcastle.edu.au
 # Created: 5th December, 2023
@@ -8,8 +8,11 @@
 
 import numpy as np
 
-a = np.array([[[12, 37, 24], [12, 42, 5], [36, 7, 13]],
-              [[61, 8, 56], [4, 54, 76], [34, 9, 23]],
-              [[47, 9, 93], [2, 23, 54], [63, 42, 32]]])
+np.random.seed(1)
+a = np.array([[np.random.randint(1, 2, 10),
+         np.random.randint(2, 3, 10)], [np.random.randint(2, 4, 10),
+         np.random.randint(4, 6, 10)],
+             [np.random.randint(2, 4, 10),
+         np.random.randint(4, 6, 10)]])
 
 print(a)

@@ -1,15 +1,18 @@
 #--------------------------------------------------------------------
-# Title: Creating3DArray.py
+# Title: MainCode3.py
 # Author: Kate McAlpine
 # Email: kate.mcalpine@newcastle.edu.au
 # Created: 5th December, 2023
 # Found in: Day 5 Lecture Slides
 #--------------------------------------------------------------------
 
-import numpy as np
+import CircleClass2 as cc2
 
-a = np.array([[[12, 37, 24], [12, 42, 5], [36, 7, 13]],
-              [[61, 8, 56], [4, 54, 76], [34, 9, 23]],
-              [[47, 9, 93], [2, 23, 54], [63, 42, 32]]])
-
-print(a)
+circle1 = cc2.Circle(5)
+circle1.area()
+circle2 = cc2.Circle(13)
+circle2.area()
+circle3 = cc2.Circle(27)
+circle3.circumference()
+circle4 = cc2.Circle(16)
+circle4.circumference()

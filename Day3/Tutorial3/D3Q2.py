@@ -6,16 +6,21 @@
 # Found in: Day 3 Tutorial Slides
 #--------------------------------------------------------------------
 
-import pandas as pd
-import matplotlib.pyplot as plt
+import numpy as np
 
-# Read in CSV
-data = pd.read_csv('ClassGrades.csv')
+x = np.array([0,1,0,0,0,0,0,0,0])
 
-print(data.head())
+# Long way:
+x[2] = x[0] + x[1]
+x[3] = x[1] + x[2]
+x[4] = x[2] + x[3]
+x[5] = x[3] + x[4]
+x[6] = x[4] + x[5]
+x[7] = x[5] + x[6]
+x[8] = x[6] + x[7]
+print(x)
 
-# Isolate columns of data
-grades = data['Grades'].values
-
-plt.hist(grades)
-plt.show()
+# Quicker way:
+for index in range(2, len(x)):
+        x[index] = x[index-1] + x[index-2]
+print(x)

@@ -6,12 +6,16 @@
 # Found in: Day 3 Tutorial Slides
 #--------------------------------------------------------------------
 
-import pandas as pd
+import numpy as np
 
-# Read in CSV
-data = pd.read_csv('ClassGrades.csv')
+v = 5
+g = 9.81
 
-print(data.head())
+t = np.linspace(0, 2, 1001)
+y = v*t - 0.5*g*t**2
 
-# Isolate columns of data
-grades = data['Grades'].values
+# Easy way:
+print(y[100])
+
+# Difficult way:
+print(v*t[100] - 0.5*g*t[100]**2)

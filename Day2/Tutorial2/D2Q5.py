@@ -9,10 +9,9 @@
 x = 0
 x1 = 1          # x-1
 x2 = 0          # x-2
-print(x)        # Print initial value
 
-for i in range(0, 8):
-        x = x1 + x2
+for i in range(0, 9):
         print(x)
+        x = x1 + x2
         x1 = x2         # Shift values
         x2 = x          # Shift values

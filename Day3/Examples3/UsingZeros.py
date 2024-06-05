@@ -11,3 +11,7 @@ import numpy as np
 a = np.zeros(10)
 
 print(a)
+
+a = np.zeros(10, dtype=int)
+
+print(a)

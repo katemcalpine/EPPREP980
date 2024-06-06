@@ -11,3 +11,7 @@ import numpy as np
 a = np.ones(10)
 
 print(a)
+
+a = np.ones(10, dtype=int)
+
+print(a)

@@ -12,6 +12,6 @@ if (a == 5):
 	b = 20
 elif (a == 10):
 	b = 30
-elif:
+elif (a == 15):
 	b = 40
 print(b)

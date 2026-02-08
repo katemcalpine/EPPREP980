@@ -8,13 +8,14 @@
 
 import numpy as np
 
-r = 0
-
 class Circle:
+    r = 0
+    
     def area(self):
         a = np.pi * self.r**2
         print(a)
 
     def circumference(self):
         c = 2 * np.pi * self.r
+
         print(c)
